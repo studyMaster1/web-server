@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title:'help',
-        help: 'Help me you fucker!',
+        helpText: 'Help me !',
         name: 'eliad levi'
     })
 })
