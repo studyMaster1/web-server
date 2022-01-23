@@ -12,6 +12,10 @@ weatherForm.addEventListener('submit', (event) =>{
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
+    fetchUrl(url)
+})
+
+const fetchUrl = (url) =>{
     fetch(url).then((response) =>{
         response.json().then((data) =>{
             if(data.error){
@@ -23,4 +27,4 @@ weatherForm.addEventListener('submit', (event) =>{
             }
         })
     })
-})
+}
